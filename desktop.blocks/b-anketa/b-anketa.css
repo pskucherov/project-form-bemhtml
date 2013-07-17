@@ -1,0 +1,11 @@
+.b-anketa
+{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.b-anketa__title
+{
+    font-weight: 400;
+    font-size: 180%;
+}
