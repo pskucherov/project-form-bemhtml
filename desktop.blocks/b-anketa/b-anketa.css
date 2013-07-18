@@ -2,10 +2,11 @@
 {
     margin: 0 auto;
     max-width: 1000px;
+    line-height: 1.4em;
 }
 
 .b-anketa__title
 {
     font-weight: 400;
-    font-size: 180%;
+    padding-bottom: 15px;
 }
