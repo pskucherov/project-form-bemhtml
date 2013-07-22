@@ -1,0 +1,52 @@
+block b-questions {
+
+    tag: 'table'
+    content: {
+
+        var c = {
+            content: []
+        }
+
+        var i = 0;
+        this.ctx.questions.forEach(function(item){
+            ++i;
+            c.content.push({
+                tag: 'tr',
+                content: [
+                    {
+                        tag: 'td',
+                        content: 'Вопрос ' + i
+                    },
+                    {
+                        tag: 'td',
+                        content: [
+                            item.text
+                        ]
+                    }
+                ]} );
+            c.content.push({
+                tag: 'tr',
+                content: [
+                    {
+                        tag: 'td',
+                        content: '&nbsp;'
+                    },
+                    {
+                        tag: 'td',
+                        content: {
+                            tag: 'textarea',
+                            content: ''
+                        }
+                    }
+
+                ]
+            });
+
+        });
+
+         return c;
+     }
+
+
+}
+
