@@ -24,8 +24,8 @@
                             content: [
                                 'Подробности о Школе читайте ',
                                 {
-                                        tag: 'a', attrs: { href: 'http://events.yandex.ru/shri/' },
-                                        url: 'http://bem.info',
+                                    block: 'b-link',
+                                    url: 'http://events.yandex.ru/shri/',
                                     content: 'на этой странице'
                                 },
                                 '.'
