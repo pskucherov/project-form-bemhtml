@@ -1,0 +1,69 @@
+block b-question {
+
+    tag: ''
+
+    content: [
+        {
+            tag: 'tr',
+            content: [
+                {
+                        tag: 'td',
+                       elem: 'left-cell',
+                    content: {
+                        tag: 'em',
+                        content: {
+                            tag: 'p',
+                            content: 'Вопрос ' + this.position
+                        }
+                    }
+                },
+                {
+                    tag: 'td',
+                    elem: 'right-cell-question',
+                    content: [
+                        {
+                            tag: 'strong',
+                            content: {
+                                tag: 'p',
+                                content: this.ctx.content
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            tag: 'tr',
+            content: [
+                {
+                    tag: 'td',
+                    content: '&nbsp;'
+                },
+                {
+                    tag: 'td',
+                    content: {
+                         tag: 'textarea',
+                        elem: 'right-cell-textarea',
+                        attrs: { cols: 80, rows: 4}
+                    }
+                }
+            ]
+        },
+        {
+            tag: 'tr',
+            content:
+                {
+                    tag: 'td',
+                    attrs: { colspan: 2 },
+                    content:
+                        {
+                            elem: 'bottom-line',
+                            tag: 'hr'
+                        }
+                }
+        }
+    ]
+
+
+
+}

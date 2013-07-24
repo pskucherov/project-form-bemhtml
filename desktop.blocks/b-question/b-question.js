@@ -3,7 +3,7 @@
 
 (function(undefined) {
 
-BEM.DOM.decl('b-questions', {
+BEM.DOM.decl('b-question', {
 
     onSetMod : {
 
