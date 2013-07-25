@@ -42,9 +42,13 @@ block b-question {
                 {
                     tag: 'td',
                     content: {
-                         tag: 'textarea',
-                        elem: 'right-cell-textarea',
-                        attrs: { cols: 80, rows: 4}
+                        elem: 'input-box',
+                        tag: 'span',
+                        content: {
+                             tag: 'textarea',
+                            elem: 'right-cell-textarea',
+                            attrs: { cols: 80, rows: 4}
+                        }
                     }
                 }
             ]
