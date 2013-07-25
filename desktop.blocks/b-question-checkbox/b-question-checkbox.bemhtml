@@ -1,0 +1,21 @@
+block b-question-checkbox {
+    content: {
+        var c = [], _this = this;
+        this.ctx.items.forEach(function(e){
+            c.push({
+                tag: 'p',
+                content: [
+                    {
+                        tag: 'input',
+                        attrs: { type: 'checkbox', value: _this.position, name: _this.ctx.fieldName }
+                    },
+                    {
+                        tag: '',
+                        content: '&nbsp;' + e
+                    }
+                ]
+            });
+        });
+        return c;
+    }
+}

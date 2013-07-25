@@ -2,8 +2,11 @@ block b-question {
 
     tag: ''
 
-    content: [
-        {
+    content: {
+
+        var c = [];
+
+        c.push({
             tag: 'tr',
             content: [
                 {
@@ -20,19 +23,16 @@ block b-question {
                 {
                     tag: 'td',
                     elem: 'right-cell-question',
-                    content: [
-                        {
-                            tag: 'strong',
-                            content: {
-                                tag: 'p',
-                                content: this.ctx.content
-                            }
-                        }
-                    ]
+                    content:
+                    {
+                        tag: 'p',
+                        content: this.ctx.content
+                    }
                 }
             ]
-        },
-        {
+        });
+
+        c.push({
             tag: 'tr',
             content: [
                 {
@@ -47,13 +47,14 @@ block b-question {
                         content: {
                              tag: 'textarea',
                             elem: 'right-cell-textarea',
-                            attrs: { cols: 80, rows: 4}
+                            attrs: { cols: 80, rows: 4, name: 'q' + this.position }
                         }
                     }
                 }
             ]
-        },
-        {
+        });
+
+        c.push({
             tag: 'tr',
             content:
                 {
@@ -65,8 +66,10 @@ block b-question {
                             tag: 'hr'
                         }
                 }
-        }
-    ]
+        });
+
+        return c;
+    }
 
 
 
