@@ -3,12 +3,12 @@
     margin: 0 auto;
     max-width: 1000px;
     line-height: 1.4em;
-    color: rgb(51, 51, 51);
+    color: #333333;
 }
 
 .b-anketa__title
 {
     font-weight: 400;
     padding-bottom: 15px;
-    color: rgb(0, 0, 0);
+    color: #000000;
 }
