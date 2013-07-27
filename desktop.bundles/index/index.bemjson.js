@@ -16,7 +16,7 @@
                     content: 'Анкета второй Школы разработки интерфейсов в Москве'
                 },
                 {
-                    block: 'b-about',
+                    block: 'b-description',
                     content: [
                         { tag: 'p', content: 'Яндекс открывает набор во вторую Школу разработки интерфейсов в Москве.' },
                         { tag: 'p', content: 'Для поступления необходимо заполнить анкету с тестовыми заданиями. Приём заявок закрывается 19 августа в 23:59 по московскому времени. По результатам теста мы пригласим в Школу 30-40 человек.' },
@@ -313,7 +313,105 @@
                                             }
                                         ]
                                     }
+                                }
+                            ]
+                        },
+                        {
+                            elem: 'title',
+                            tag: 'h3',
+                            content: 'Расскажите нам о себе'
+                        },
+                        {
+                            block: 'b-form-table',
+                            tag: 'table',
+                            content: [
+                                {
+                                    block: 'b-about',
+                                    name: 'Резюме до 250 КБ',
+                                    content: {
+                                        elem: 'right-cell',
+                                        tag: 'p',
+                                        content: {
+                                            tag: 'input',
+                                            attrs: { name: 'uploadfile', type: 'file' }
+                                        }
+                                    }
                                 },
+                                {
+                                    block: 'b-about',
+                                    name: 'Ссылка на профиль в Моем Круге',
+                                    content: {
+                                        elem: 'right-cell',
+                                        tag: 'span',
+                                        mix: [{ block: 'b-question', elem: 'right-cell-question', elem: 'input-box' }],
+                                        content: {
+                                            tag: 'input',
+                                            elem: 'input',
+                                            mix: [{ block: 'b-question', elem: 'right-cell-input' }],
+                                            attrs: { name: 'fnm' }
+                                        }
+                                    }
+                                },
+                                {
+                                    block: 'b-about',
+                                    name: 'Имя, Фамилия',
+                                    content: {
+                                        elem: 'right-cell',
+                                        tag: 'span',
+                                        mix: [{ block: 'b-question', elem: 'right-cell-question', elem: 'input-box' }],
+                                        content: {
+                                            tag: 'input',
+                                            elem: 'input',
+                                            mix: [{ block: 'b-question', elem: 'right-cell-input' }],
+                                            attrs: { name: 'fnm' }
+                                        }
+                                    }
+                                },
+                                {
+                                    block: 'b-about',
+                                    name: 'Телефон',
+                                    content: {
+                                        elem: 'right-cell',
+                                        tag: 'span',
+                                        mix: [{ block: 'b-question', elem: 'right-cell-question', elem: 'input-box' }],
+                                        content: {
+                                            tag: 'input',
+                                            elem: 'input',
+                                            mix: [{ block: 'b-question', elem: 'right-cell-input' }],
+                                            attrs: { name: 'fnm' }
+                                        }
+                                    }
+                                },
+                                {
+                                    block: 'b-about',
+                                    name: 'E-mail',
+                                    content: {
+                                        elem: 'right-cell',
+                                        tag: 'span',
+                                        mix: [{ block: 'b-question', elem: 'right-cell-question', elem: 'input-box' }],
+                                        content: {
+                                            tag: 'input',
+                                            elem: 'input',
+                                            mix: [{ block: 'b-question', elem: 'right-cell-input' }],
+                                            attrs: { name: 'fnm' }
+                                        }
+                                    }
+                                },
+                                {
+                                    block: 'b-about',
+                                    name: 'Дополнительные сведения',
+                                    content: {
+                                        elem: 'right-cell',
+                                        tag: 'p',
+                                        mix: [{ block: 'b-question', elem: 'right-cell-question', elem: 'input-box' }],
+                                        content: {
+                                            tag: 'textarea',
+                                            elem: 'input',
+                                            mix: [{ block: 'b-question', elem: 'right-cell-input' }],
+                                            attrs: { name: 'fnm', cols: 80, rows: 4 }
+                                        }
+                                    }
+                                }
                             ]
                         }
                     ]

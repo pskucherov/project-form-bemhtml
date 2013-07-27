@@ -1,11 +1,12 @@
 .b-form
 {
-    padding-top: 20px;
+
 }
 
 .b-form__title
 {
     font-size: 150%;
     font-weight: 400;
+    padding-top: 35px;
     padding-bottom: 25px;
 }

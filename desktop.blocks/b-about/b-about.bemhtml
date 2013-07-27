@@ -1,0 +1,40 @@
+
+block b-about {
+
+    tag: ''
+
+    content: {
+
+        var c = [];
+
+        c.push({
+            tag: 'tr',
+            content: [
+                {
+                    tag: 'td',
+                    elem: 'left-cell',
+                    mix: [{ block: 'b-question', elem: 'left-cell' }],
+                    content: {
+                        content: {
+                            tag: 'p',
+                            content: this.ctx.name
+                        }
+                    }
+                },
+                {
+                    tag: 'td',
+                    content:
+                        {
+                            tag: '',
+                            content: this.ctx.content
+                        }
+                }
+            ]
+        });
+
+        return c;
+    }
+
+
+
+}

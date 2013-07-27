@@ -46,7 +46,7 @@ block b-question {
                         tag: 'span',
                         content: {
                              tag: 'textarea',
-                            elem: 'right-cell-textarea',
+                            elem: 'right-cell-input',
                             attrs: { cols: 80, rows: 4, name: 'q' + this.position }
                         }
                     }
