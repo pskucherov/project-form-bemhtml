@@ -3,7 +3,7 @@ block b-question-checkbox {
         var c = [], _this = this;
         this.ctx.items.forEach(function(e){
             c.push({
-                tag: 'p',
+                elem: 'input-checbox',
                 content: [
                     {
                         tag: 'input',

@@ -1,0 +1,77 @@
+block b-question-1-15 {
+
+
+
+    content: {
+
+        var c = {
+                block: 'b-layout-table',
+                mods: { layout: 'cells' },
+                content: []
+            }
+            , i = 0;
+
+
+        this.ctx.questions.forEach(function(e) {
+            ++i;
+            c.content.push({
+                elem: 'row',
+                content: [
+                    {
+                        elem: 'cell',
+                        elemMods: { position: 'l', text: 'italic' },
+                        content: 'Вопрос ' + i
+                    },
+                    {
+                        elem: 'cell',
+                        elemMods: { position: 'r-question' },
+                        content: e
+                    }
+                ]
+            });
+
+            c.content.push({
+                elem: 'row',
+                content: [
+                    {
+                        elem: 'cell',
+                        content: ''
+                    },
+                    {
+                        elem: 'cell',
+                        content:
+                        {
+                            block: 'b-input-box',
+                            content: {
+                                elem: 'field',
+                                mix: [{ block: 'b-input-box', elem: 'field-textarea' }],
+                                tag: 'textarea',
+                                attrs: { cols: 80, rows: 4, name: 'q1' }
+                            }
+                        }
+                    }
+                ]
+            });
+
+            c.content.push({
+                elem: 'row',
+                    content: [
+                {
+                    elem: 'cell',
+                    colspan: '2',
+                    content:
+                    {
+                        block: 'b-separator'
+                    }
+                }
+            ]
+            });
+
+        });
+
+        return c;
+    }
+
+
+
+}

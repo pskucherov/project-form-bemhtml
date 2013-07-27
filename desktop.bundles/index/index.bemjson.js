@@ -49,9 +49,312 @@
                             content: 'Заполните анкету'
                         },
                         {
-                            block: 'b-layout-table',
-                            mods: { layout: 'cells' },
+                            block: 'b-table',
                             content: [
+                                {
+                                    block: 'b-question-1-15',
+                                    questions: [
+                                        {
+                                            block: 'b-text',
+                                            elem: 'p',
+                                            content: {
+                                                elem: 'strong',
+                                                content: 'Год рождения.'
+                                            }
+                                        },
+                                        {
+                                            block: 'b-text',
+                                            elem: 'p',
+                                            content: {
+                                                elem: 'strong',
+                                                content: 'Город, в котором вы живёте.'
+                                            }
+                                        },
+                                        {
+                                            block: 'b-text',
+                                            elem: 'p',
+                                            content: {
+                                                elem: 'strong',
+                                                content: 'Вуз, факультет, специальность, кафедра.'
+                                            }
+                                        },
+                                        {
+                                            block: 'b-text',
+                                            elem: 'p',
+                                            content: {
+                                                elem: 'strong',
+                                                content: 'Год окончания вуза.'
+                                            }
+                                        },
+                                        {
+                                            block: 'b-text',
+                                            elem: 'p',
+                                            content: [
+                                                {
+                                                    elem: 'strong',
+                                                    content: 'Уровень владения английским языком:'
+                                                },
+                                                {
+                                                    block: 'b-question-checkbox',
+                                                    fieldName: 'q5',
+                                                    items: [
+                                                        'начальный;',
+                                                        'средний;',
+                                                        'свободное владение.'
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block: 'b-text',
+                                            elem: 'p',
+                                            content: {
+                                                elem: 'strong',
+                                                content: 'Чего вы ожидаете от участия в Школе?'
+                                            }
+                                        },
+                                        {
+                                            block: 'b-text',
+                                            elem: 'p',
+                                            content: {
+                                                elem: 'strong',
+                                                content: 'Откуда вы о нас узнали?'
+                                            }
+                                        },
+                                        {
+                                            block: 'b-text',
+                                            elem: 'p',
+                                            content: {
+                                                elem: 'strong',
+                                                content: 'Сколько времени вы были бы готовы уделять стажировке или работе в Яндексе?'
+                                            }
+                                        },
+                                        {
+                                            block: 'b-text',
+                                            elem: 'p',
+                                            content: {
+                                                elem: 'strong',
+                                                content: 'Расскажите о вашем опыте разработки. Нам будет интересно всё &mdash; как серьезный интерфейс, так и просто домашняя страничка.'
+                                            }
+                                        },
+                                        {
+                                            block: 'b-text',
+                                            elem: 'p',
+                                            content: {
+                                                elem: 'strong',
+                                                content: 'Если вы где-нибудь работали, расскажите, какие у вас были должностные обязанности и был ли опыт работы в команде.'
+                                            }
+                                        },
+                                        {
+                                            block: 'b-text',
+                                            elem: 'p',
+                                            content: {
+                                                elem: 'strong',
+                                                content: 'Перечислите, какими программными продуктами вы пользуетесь в своей работе — от редактора до специализированных утилит (Intellij Idea, Node.js, Uglify.js, GNU Make). Для каждого инструмента укажите, какие задачи вы с помощью него решаете и почему выбрали именно его.'
+                                            }
+                                        },
+                                        {
+                                            block: 'b-text',
+                                            elem: 'p',
+                                            content: {
+                                                elem: 'strong',
+                                                content: 'Пользуетесь ли вы командной строкой? Какими командами вы пользуетесь и какие задачи вы решаете с их помощью? С какими программами вы преимущественно или полностью взаимодействуете через интерфейс командной строки?'
+                                            }
+                                        },
+                                        {
+                                            block: 'b-text',
+                                            content: [
+                                                {
+                                                    elem: 'p',
+                                                    content: {
+                                                        elem: 'strong',
+                                                        content: 'Напишите на JavaScript функцию, которая выводит список всех чисел, которые равны сумме факториалов своих цифр. Пример такого числа:'
+                                                    }
+                                                },
+                                                {
+                                                    elem: 'p',
+                                                    content: '4! + 0! + 5! + 8! + 5! = 40585'
+                                                },
+                                                {
+                                                    elem: 'p',
+                                                    content: {
+                                                        elem: 'strong',
+                                                        content: [
+                                                            'В качестве ответа на вопрос пришлите ссылку на ',
+                                                            {
+                                                                block: 'b-link',
+                                                                url: 'http://jsfiddle.net/',
+                                                                content: 'http://jsfiddle.net/'
+                                                            },
+                                                            ' с вашим кодом или на ваш репозиторий на ',
+                                                            {
+                                                                block: 'b-link',
+                                                                url: 'https://github.com/',
+                                                                content: 'https://github.com/'
+                                                            },
+                                                            '.'
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block: 'b-text',
+                                            elem: 'p',
+                                            content: {
+                                                content: [
+                                                    {
+                                                        elem: 'strong',
+                                                        content: 'Вы — пилот грузового межгалактического корабля. Ваша работа — перевозка грузов с одной планету на другую. Грузоподъемность вашего корабля ограничена, поэтому за один рейс вы можете перевезти не более N кг полезного груза. Ваш корабль умеет сообщать свое состояние (местоположение и степень загруженности), а также летать в любую точку пространства. Каждая планета может содержать на себе груз, который можно взять. Также на каждой планете груз можно оставить .'
+                                                    },
+                                                    {
+                                                        elem: 'p',
+                                                        content: {
+                                                            elem: 'strong',
+                                                            content: 'Задание'
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: 'p',
+                                                        content: {
+                                                            elem: 'strong',
+                                                            content: 'Даны незавершенные интерфейсы корабля и планеты. Напишите недостающий код.'
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: 'p',
+                                                        content: {
+                                                            elem: 'strong',
+                                                            content: 'Полное условие задачи доступно на'
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: 'p',
+                                                        content: {
+                                                            elem: 'strong',
+                                                            content: [
+                                                                {
+                                                                    block: 'b-link',
+                                                                    url: 'https://github.com/yandex-shri/introtask-space',
+                                                                    content: 'https://github.com/yandex-shri/introtask-space'
+                                                                },
+                                                                '.'
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: 'p',
+                                                        elem: 'strong',
+                                                        content: [
+                                                            'В качестве ответа на вопрос пришлите ссылку на ',
+                                                            {
+                                                                block: 'b-link',
+                                                                url: 'http://jsfiddle.net/',
+                                                                content: 'http://jsfiddle.net/'
+                                                            },
+                                                            ' с вашим кодом или на ваш репозиторий на ',
+                                                            {
+                                                                block: 'b-link',
+                                                                url: 'https://github.com/',
+                                                                content: 'https://github.com/'
+                                                            },
+                                                            '.'
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            block: 'b-text',
+                                            elem: 'p',
+                                            content: {
+                                                elem: 'strong',
+                                                content: [
+                                                    'Сверстайте форму-анкету с нашими заданиями для кандидатов. Страница должна работать в следующих браузерах: MSIE (8, 9, 10), Google Chrome (26, 27), Firefox (20, 21), Opera (12.15, 12.14), Яндекс.Браузер 1.5. По возможности используйте приёмы безопасной деградации CSS. Страница должна содержать интерактив, реализованный с помощью JS и jQuery. Это может быть:',
+                                                    {
+                                                        block: 'b-text',
+                                                        elem: 'ul',
+                                                        content: [
+                                                            {
+                                                                elem: 'li',
+                                                                content: {
+                                                                    elem: 'p',
+                                                                    content: 'проверка полноты и правильности заполнения полей (где это возможно);'
+                                                                }
+                                                            },
+                                                            {
+                                                                elem: 'li',
+                                                                content: {
+                                                                    elem: 'p',
+                                                                    content: 'возможность свернуть и развернуть разделы (аккордеон);'
+                                                                }
+                                                            },
+                                                            {
+                                                                elem: 'li',
+                                                                content: {
+                                                                    elem: 'p',
+                                                                    content: 'индикатор заполнения анкеты;'
+                                                                }
+                                                            },
+                                                            {
+                                                                elem: 'li',
+                                                                content: {
+                                                                    elem: 'p',
+                                                                    content: 'что-нибудь ещё.'
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        elem: 'p',
+                                                        content: 'Подумайте над тем, как эти данные будут отправляться на сервер.'
+                                                    },
+                                                    {
+                                                        elem: 'p',
+                                                        content: 'Будет плюсом, если вы сверстаете страницу, используя БЭМ.'
+                                                    },
+                                                    {
+                                                        elem: 'p',
+                                                        content: 'Дополнительные задания'
+                                                    },
+                                                    {
+                                                        elem: 'p',
+                                                        content: '1. Выполните задание про форму-анкету, используя один из классических шаблонизаторов: Handlebars, mustache, Dust, Jade и т.п.'
+                                                    },
+                                                    {
+                                                        elem: 'p',
+                                                        content: '2. Выполните задание про форму-анкету, используя один из экзотических шаблонизаторов: XSLT, YATE, BEMHTML и т.п.'
+                                                    },
+                                                    {
+                                                        elem: 'p',
+                                                        content: [
+                                                            'Разработку необходимо вести на ',
+                                                            {
+                                                                block: 'b-link',
+                                                                url: 'https://github.com/',
+                                                                content: 'https://github.com/'
+                                                            },
+                                                            '. В качестве ответа на вопрос пришлите ссылку на проект.'
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+
+
+
+                                /*
+
+                                ,
+
+
+
+
+
+
+
                                 {
                                     elem: 'row',
                                     content: [
@@ -108,7 +411,7 @@
                                                 }
                                         }
                                     ]
-                                }
+                                }*/
                             ]
                         }
 
