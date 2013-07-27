@@ -1,4 +1,4 @@
-.b-anketa
+.b-questionnaire
 {
     margin: 0 auto;
     max-width: 921px;
@@ -6,7 +6,7 @@
     color: #333333;
 }
 
-.b-anketa__title
+.b-questionnaire__title
 {
     font-weight: 400;
     padding-bottom: 15px;
