@@ -1,0 +1,5 @@
+block b-separator {
+
+    tag: 'hr'
+
+}
