@@ -484,7 +484,29 @@
                                                     }
                                                 }
                                             ]
+                                        },
+
+
+                                        {
+                                            elem: 'row',
+                                            content: [
+                                                {
+                                                    elem: 'cell',
+                                                    elemMods: { position: 'l' },
+                                                    content: ''
+                                                },
+                                                {
+                                                    elem: 'cell',
+                                                    content: {
+                                                        tag: 'span',
+                                                        content: 'Откуда вы узнали о нашем предложении?'
+                                                    }
+                                                }
+                                            ]
                                         }
+
+
+
 
                                     ]
                                 }

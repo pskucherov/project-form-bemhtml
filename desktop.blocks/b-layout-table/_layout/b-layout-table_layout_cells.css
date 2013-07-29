@@ -9,7 +9,6 @@
 
     vertical-align: top;
 
-    padding: 0.4em 0.5em 0.5em 0px;
 }
 
 .b-layout-table_layout_cells .b-layout-table__cell_text_italic
@@ -19,8 +18,9 @@
 
 .b-layout-table_layout_cells .b-layout-table__cell_position_r-question
 {
-    padding-top: 0.4em;
-    padding-right: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 0px;
+}
+
+.b-layout-table_layout_cells .b-layout-table__cell
+{
+    padding: 0.4em 0.5em 0.5em 0px;
 }
