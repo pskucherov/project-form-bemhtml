@@ -1,0 +1,34 @@
+block b-selecter {
+
+    content: {
+
+        var c = {
+                tag: 'select',
+                attrs: this.ctx.attrs,
+                content: []
+            };
+
+        c.content.push({
+            tag: 'option',
+            attrs: { value: 'no' },
+            content: 'Выбрать'
+        });
+
+        this.ctx.items.forEach(function(e) {
+            c.content.push({
+                tag: 'option',
+                attrs: { value: e },
+                content: e
+            });
+        });
+
+        c.content.push({
+            tag: 'option',
+            attrs: { value: 'other' },
+            content: 'другое'
+        });
+
+        return c;
+    }
+
+}

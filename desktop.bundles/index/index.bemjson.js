@@ -485,21 +485,39 @@
                                                 }
                                             ]
                                         },
-
-
                                         {
                                             elem: 'row',
                                             content: [
                                                 {
-                                                    elem: 'cell',
-                                                    elemMods: { position: 'l' },
-                                                    content: ''
+                                                    elem: 'cell'
                                                 },
                                                 {
                                                     elem: 'cell',
                                                     content: {
                                                         tag: 'span',
                                                         content: 'Откуда вы узнали о нашем предложении?'
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'row',
+                                            content: [
+                                                {
+                                                    elem: 'cell'
+                                                },
+                                                {
+                                                    elem: 'cell',
+                                                    content: {
+                                                        block: 'b-selecter',
+                                                        attrs: { name: 'recommend' },
+                                                        items: [
+                                                            'от HR-менеджера Яндекса',
+                                                            'Я.Субботник',
+                                                            'Yet another Conference',
+                                                            'из поиска',
+                                                            'по рекомендации'
+                                                        ]
                                                     }
                                                 }
                                             ]
