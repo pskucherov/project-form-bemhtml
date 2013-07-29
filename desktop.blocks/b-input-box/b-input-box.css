@@ -30,7 +30,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
-    background: none repeat scroll 0% 0% transparent;
+    background: none;
 }
 
 .b-input-box__field-textarea

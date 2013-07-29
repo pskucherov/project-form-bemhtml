@@ -24,3 +24,14 @@
 {
     padding: 0.4em 0.5em 0.5em 0px;
 }
+
+.b-layout-table_layout_cells .b-layout-table__cell_type_agree
+{
+    color: #000;
+}
+
+.b-layout-table_layout_cells .b-layout-table__cell_type_footer
+{
+    text-align: center;
+    background: #e7e7e7;
+}

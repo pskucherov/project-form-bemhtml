@@ -521,8 +521,57 @@
                                                     }
                                                 }
                                             ]
-                                        }
+                                        },
+                                        {
+                                            elem: 'row',
+                                            content: [
+                                                {
+                                                    elem: 'cell'
+                                                },
+                                                {
+                                                    elem: 'cell',
+                                                    elemMods: { type: 'agree' },
+                                                    content: {
+                                                        content: [
+                                                            {
+                                                                tag: 'input',
+                                                                attrs: { type: 'checkbox', name: 'agree', value: 1 }
+                                                            },
+                                                            {
+                                                                tag: 'strong',
 
+                                                                content: 'Я даю свое согласие на передачу в ООО «ЯНДЕКС» резюме и/или анкеты, содержащих мои персональные данные, и согласен с тем, что они будут храниться в ООО «ЯНДЕКС» в течение 5 лет и будут обрабатываться исключительно для целей предложения мне вакансий группы компаний «ЯНДЕКС», в соответствии с Федеральным законом «О персональных данных».'
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'row',
+                                            content: {
+                                                elem: 'cell',
+                                                colspan: '2'
+                                            }
+                                        },
+                                        {
+                                            elem: 'row',
+                                            content: {
+                                                elem: 'cell',
+                                                colspan: '2',
+                                                elemMods: { type: 'footer' },
+                                                content: [
+                                                    {
+                                                        tag: 'button',
+                                                        content: 'Отправить'
+                                                    },
+                                                    {
+                                                        tag: 'button',
+                                                        content: 'Очистить'
+                                                    }
+                                                ]
+                                            }
+                                        }
 
 
 
