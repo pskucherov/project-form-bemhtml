@@ -15,17 +15,15 @@ block b-about {
                     elem: 'left-cell',
                     mix: [{ block: 'b-question', elem: 'left-cell' }],
                     content: {
-                        content: {
-                            tag: 'p',
-                            content: this.ctx.name
-                        }
+                        tag: 'span',
+                        content: this.ctx.name
                     }
                 },
                 {
                     tag: 'td',
                     content:
                         {
-                            tag: '',
+                            tag: 'span',
                             content: this.ctx.content
                         }
                 }

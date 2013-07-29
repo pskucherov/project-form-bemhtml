@@ -7,7 +7,9 @@
     width: 25%;
     text-align: left;
 
-    padding-top: 0.4em;
+    vertical-align: top;
+
+    padding: 0.4em 0.5em 0.5em 0px;
 }
 
 .b-layout-table_layout_cells .b-layout-table__cell_text_italic

@@ -341,8 +341,257 @@
                                             }
                                         }
                                     ]
+                                },
+                                {
+                                    elem: 'title',
+                                    mix: [{block: 'b-form', elem: 'title'}],
+                                    tag: 'h3',
+                                    content: 'Расскажите нам о себе'
+                                },
+                                {
+                                    block: 'b-layout-table',
+                                    mods: { layout: 'cells' },
+                                    content: [
+                                        {
+                                            elem: 'row',
+                                            content: [
+                                                {
+                                                    elem: 'cell',
+                                                    elemMods: { position: 'l' },
+                                                    content: 'Резюме до 250 КБ'
+                                                },
+                                                {
+                                                    elem: 'cell',
+                                                    content: {
+                                                        tag: 'input',
+                                                        attrs: { name: 'uploadfile', type: 'file' }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'row',
+                                            content: [
+                                                {
+                                                    elem: 'cell',
+                                                    elemMods: { position: 'l' },
+                                                    content: 'Ссылка на профиль в Моем Круге'
+                                                },
+                                                {
+                                                    elem: 'cell',
+                                                    content: {
+                                                        block: 'b-input-box',
+                                                        content: {
+                                                            elem: 'field',
+                                                            tag: 'input',
+                                                            attrs: { name: 'mk' }
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'row',
+                                            content: [
+                                                {
+                                                    elem: 'cell',
+                                                    elemMods: { position: 'l' },
+                                                    content: 'Имя, Фамилия'
+                                                },
+                                                {
+                                                    elem: 'cell',
+                                                    content: {
+                                                        block: 'b-input-box',
+                                                        content: {
+                                                            elem: 'field',
+                                                            tag: 'input',
+                                                            attrs: { name: 'fio' }
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'row',
+                                            content: [
+                                                {
+                                                    elem: 'cell',
+                                                    elemMods: { position: 'l' },
+                                                    content: 'Телефон'
+                                                },
+                                                {
+                                                    elem: 'cell',
+                                                    content:
+                                                    [
+                                                        {
+                                                            block: 'b-input-box',
+                                                            content: {
+                                                                elem: 'field',
+                                                                tag: 'input',
+                                                                attrs: { name: 'tel' }
+                                                            }
+                                                        },
+                                                        {
+                                                            block: 'b-note',
+                                                            content: 'Пожалуйста, укажите код города'
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'row',
+                                            content: [
+                                                {
+                                                    elem: 'cell',
+                                                    elemMods: { position: 'l' },
+                                                    content: {
+                                                        tag: 'strong',
+                                                        content: 'E-mail'
+                                                    }
+                                                },
+                                                {
+                                                    elem: 'cell',
+                                                    content: {
+                                                        block: 'b-input-box',
+                                                        content: {
+                                                            elem: 'field',
+                                                            tag: 'input',
+                                                            attrs: { name: 'email' }
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'row',
+                                            content: [
+                                                {
+                                                    elem: 'cell',
+                                                    elemMods: { position: 'l' },
+                                                    content: 'Дополнительные сведения'
+                                                },
+                                                {
+                                                    elem: 'cell',
+                                                    content: {
+                                                        block: 'b-input-box',
+                                                        content: {
+                                                            elem: 'field',
+                                                            mix: [{ block: 'b-input-box', elem: 'field-textarea' }],
+                                                            tag: 'textarea',
+                                                            attrs: { cols: 80, rows: 4, name: 'moreabout' }
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+
+                                    ]
                                 }
 
+
+
+
+
+                                /*
+                                {
+                                    block: 'b-form-table',
+                                    tag: 'table',
+                                    content: [
+                                        {
+                                            block: 'b-about',
+                                            name: 'Резюме до 250 КБ',
+                                            content: {
+                                                elem: 'right-cell',
+                                                tag: 'span',
+                                                content: {
+                                                    tag: 'input',
+                                                    attrs: { name: 'uploadfile', type: 'file' }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            block: 'b-about',
+                                            name: 'Ссылка на профиль в Моем Круге',
+                                            content: {
+                                                elem: 'right-cell',
+                                                tag: 'span',
+                                                mix: [{ block: 'b-question', elem: 'right-cell-question', elem: 'input-box' }],
+                                                content: {
+                                                    tag: 'input',
+                                                    elem: 'input',
+                                                    mix: [{ block: 'b-question', elem: 'right-cell-input' }],
+                                                    attrs: { name: 'fnm' }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            block: 'b-about',
+                                            name: 'Имя, Фамилия',
+                                            content: {
+                                                elem: 'right-cell',
+                                                tag: 'span',
+                                                mix: [{ block: 'b-question', elem: 'right-cell-question', elem: 'input-box' }],
+                                                content: {
+                                                    tag: 'input',
+                                                    elem: 'input',
+                                                    mix: [{ block: 'b-question', elem: 'right-cell-input' }],
+                                                    attrs: { name: 'fnm' }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            block: 'b-about',
+                                            name: 'Телефон',
+                                            content: {
+                                                elem: 'right-cell',
+                                                tag: 'span',
+                                                mix: [{ block: 'b-question', elem: 'right-cell-question', elem: 'input-box' }],
+                                                content: {
+                                                    tag: 'input',
+                                                    elem: 'input',
+                                                    mix: [{ block: 'b-question', elem: 'right-cell-input' }],
+                                                    attrs: { name: 'fnm' }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            block: 'b-about',
+
+                                            name: {
+                                                tag: 'strong',
+                                                content: 'E-mail'
+                                            },
+                                            content: {
+                                                elem: 'right-cell',
+                                                tag: 'span',
+                                                mix: [{ block: 'b-question', elem: 'right-cell-question', elem: 'input-box' }],
+                                                content: {
+                                                    tag: 'input',
+                                                    elem: 'input',
+                                                    mix: [{ block: 'b-question', elem: 'right-cell-input' }],
+                                                    attrs: { name: 'fnm' }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            block: 'b-about',
+                                            name: 'Дополнительные сведения',
+                                            content: {
+                                                elem: 'right-cell',
+                                                tag: 'p',
+                                                mix: [{ block: 'b-question', elem: 'right-cell-question', elem: 'input-box' }],
+                                                content: {
+                                                    tag: 'textarea',
+                                                    elem: 'input',
+                                                    mix: [{ block: 'b-question', elem: 'right-cell-input' }],
+                                                    attrs: { name: 'fnm', cols: 80, rows: 4 }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                                */
 
 
                                 /*

@@ -46,7 +46,7 @@ block b-question-1-15 {
                                 elem: 'field',
                                 mix: [{ block: 'b-input-box', elem: 'field-textarea' }],
                                 tag: 'textarea',
-                                attrs: { cols: 80, rows: 4, name: 'q1' }
+                                attrs: { cols: 80, rows: 4, name: 'q' + i }
                             }
                         }
                     }

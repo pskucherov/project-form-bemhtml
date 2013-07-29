@@ -13,3 +13,13 @@
     padding-bottom: 15px;
     color: #000000;
 }
+
+.b-questionnaire__title_size_middle
+{
+    font-size: 135%;
+    font-weight: bold;
+    color: #333333;
+
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
