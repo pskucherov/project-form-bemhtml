@@ -562,11 +562,15 @@
                                                 elemMods: { type: 'footer' },
                                                 content: [
                                                     {
-                                                        tag: 'button',
+                                                        block: 'b-form-button',
+                                                        mods: { theme: 'grey-m', size: 'm' },
+                                                        type: 'submit',
                                                         content: 'Отправить'
                                                     },
                                                     {
-                                                        tag: 'button',
+                                                        block: 'b-form-button',
+                                                        mods: { theme: 'grey-m', size: 'm' },
+                                                        type: 'submit',
                                                         content: 'Очистить'
                                                     }
                                                 ]
