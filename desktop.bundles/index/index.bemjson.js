@@ -563,14 +563,15 @@
                                                 content: [
                                                     {
                                                         block: 'b-form-button',
-                                                        mods: { theme: 'grey-m', size: 'm' },
+                                                        mods: { theme: 'grey-m', size: 'm', valign: 'middle' },
                                                         type: 'submit',
                                                         content: 'Отправить'
                                                     },
                                                     {
                                                         block: 'b-form-button',
-                                                        mods: { theme: 'grey-m', size: 'm' },
-                                                        type: 'submit',
+                                                        mods: { theme: 'grey-m', size: 'm', valign: 'middle', padding: 'left' },
+                                                        //type: 'submit',
+                                                        type: 'reset',
                                                         content: 'Очистить'
                                                     }
                                                 ]

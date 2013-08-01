@@ -1,3 +1,5 @@
 block b-input-box {
-    tag: 'span'
+    tag: 'span',
+    js: true,
+    content: this.ctx.content
 }

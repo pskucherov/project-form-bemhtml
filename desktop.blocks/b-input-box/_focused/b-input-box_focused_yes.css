@@ -1,0 +1,7 @@
+.b-input-box_focused_yes
+{
+
+    -webkit-box-shadow:inset 0 1px 1px #cfcfcf,0 0 1px #ffd94f,0 0 1px #ffd94f,0 0 2px #ffd94f;
+    -moz-box-shadow:inset 0 1px 1px #cfcfcf,0 0 1px #ffd94f,0 0 1px #ffd94f,0 0 2px #ffd94f;
+    box-shadow:inset 0 1px 1px #cfcfcf,0 0 1px #ffd94f,0 0 1px #ffd94f,0 0 2px #ffd94f
+}

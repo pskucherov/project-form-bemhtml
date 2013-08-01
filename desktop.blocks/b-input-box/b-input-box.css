@@ -12,6 +12,10 @@
 
     border-color: #a3a3a3 #c6c6c6 #e5e5e5;
 
+    -webkit-transition:all .2s ease;
+    -moz-transition:all .2s ease;
+    -o-transition:all .2s ease;
+    transition:all .2s ease
 }
 
 .b-input-box__field
@@ -26,6 +30,9 @@
     vertical-align: top;
     border: 0;
 
+    outline:0;
+    opacity:.5;
+
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -35,7 +42,6 @@
 
 .b-input-box__field-textarea
 {
-
+    height:auto;
     resize: vertical;
-
 }
