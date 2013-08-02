@@ -1,6 +1,5 @@
 .b-form
 {
-
 }
 
 .b-form__title
@@ -9,4 +8,16 @@
     font-weight: 400;
     padding-top: 35px;
     padding-bottom: 35px;
+}
+
+.b-form__error
+{
+    color: red;
+    margin-top: 0.25em;
+    display: none;
+}
+
+.b-form__error_show_yes
+{
+    display: block;
 }

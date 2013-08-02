@@ -1,0 +1,8 @@
+.b-form-checkbox_checked_yes
+{
+}
+
+.b-form-checkbox_checked_yes .b-form-checkbox__tick
+{
+    background: url(data:image/gif;base64,R0lGODlhDQANALMJADIyMi4uLoWFhVZWVnZ2di8vLzAwMDExMTMzMwAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAkALAAAAAANAA0AAAQhMMlJq70Y4Yn0BoBQHdNxEKOZmINlvDBWzMWWBIGt73wEADs=) 50% no-repeat;
+}
