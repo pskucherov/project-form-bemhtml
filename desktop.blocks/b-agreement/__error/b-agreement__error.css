@@ -1,0 +1,11 @@
+.b-agreement__error
+{
+    display: none;
+    margin-top: 0.25em;
+    color: red;
+}
+
+.b-agreement__error_visible_yes
+{
+    display: block;
+}

@@ -1,0 +1,22 @@
+block b-agreement {
+
+    js: true,
+    elemMods: { type: 'agree' },
+    content: [
+        {
+            block: 'b-form-checkbox',
+            name: this.ctx.name,
+            value: 1
+        },
+        {
+            elem: 'e-text',
+            tag: 'strong',
+            content: this.ctx.content
+        },
+        {
+            elem: 'error',
+            content: this.ctx.error
+        }
+    ]
+
+}

@@ -29,10 +29,10 @@ BEM.DOM.decl('b-form-checkbox', {
     _onChange: function (a) {
         if (a.target.checked) {
             this.setMod('checked', 'yes');
-            $(".b-form__error_for_agree").removeClass("b-form__error_show_yes");
+            this.trigger('hideError');
         } else {
             this.delMod('checked');
-            $(".b-form__error_for_agree").addClass("b-form__error_show_yes");
+            this.trigger('showError');
         }
     }
 
@@ -40,7 +40,7 @@ BEM.DOM.decl('b-form-checkbox', {
 
     live : function() {
         this
-            .liveBindTo('field', 'click', function (a) {
+            .liveBindTo('field', 'click settick', function (a) {
                 this._onClick(a);
             })
             .liveBindTo('field', 'change', function (a) {
