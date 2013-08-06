@@ -1,0 +1,6 @@
+/* *html нужен для b-keyboard */
+*html .popup_theme_ffffff .popup__tail
+{
+    background: #fff;
+    border-color: #d6d6d6;
+}

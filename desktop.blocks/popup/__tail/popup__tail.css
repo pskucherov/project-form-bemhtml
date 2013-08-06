@@ -1,0 +1,54 @@
+.popup__tail
+{
+    font: 0/0 a;
+
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    
+    background-repeat: no-repeat;
+}
+
+/* Попап открыватся вниз */ /**/
+.popup_direction_down .popup__tail
+{
+    width: 19px;
+    height: 10px;
+    margin: -19px 0 0 19px;
+    
+    background-position: 0 0;
+}
+
+/* Попап открыватся вверх */ /**/
+.popup_direction_up .popup__tail
+{
+    top: 100%;
+
+    width: 19px;
+    height: 10px;
+    margin: 0 0 0 19px;
+    
+    background-position: 0 -10px;
+}
+
+/* Попап открыватся влево */ /**/
+.popup_direction_left .popup__tail
+{
+    left: 100%;
+
+    width: 9px;
+    height: 19px;
+    margin: 19px 0 0;
+    
+    background-position: -32px 0;
+}
+
+/* Попап открыватся вправо */ /**/
+.popup_direction_right .popup__tail
+{
+    width: 9px;
+    height: 19px;
+    margin: 19px 0 0 -10px;
+    
+    background-position: -23px 0;
+}

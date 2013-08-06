@@ -1,0 +1,60 @@
+.popup,
+.i-popup .popup .popup
+{
+    display: none;
+}
+
+.i-popup .popup
+{
+    display: block;
+}
+
+.popup__under
+{
+    top: -7px;
+    left: -7px;
+
+    padding: 7px 7px 6px;
+}
+
+.popup__wrap
+{
+    font-size: 100%;
+
+    border-collapse: collapse;
+}
+
+.popup__wrap-cell
+{
+    padding: 0;
+}
+
+.popup__content
+{
+    position: relative;
+    z-index: 10;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Адская смесь для всех браузеров кроме IE и FF2.
+   Если первый элемент в body имеет margin-top,
+   то body с position: relative сдвигается на этот оступ.
+   Поэтому добавляем элемент с нулевым верхним оступом и еще с кучей свойств (ради любимой Оперы),
+   используя псевдо-классы.
+
+body:before
+{
+    font: 1px/1px a;
+
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+
+    width: 1px;
+    height: 1px;
+    margin: 0 0 -1px -10px;
+
+    content: '&#160';
+}*/ /**/

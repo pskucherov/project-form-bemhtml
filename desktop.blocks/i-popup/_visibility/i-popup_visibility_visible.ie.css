@@ -1,0 +1,5 @@
+/* В IE7 баг для position:absolute и visibility:visible. Для IE будет срабатывать display:block и display:none */
+.i-popup_visibility_visible
+{
+    display: block;
+}

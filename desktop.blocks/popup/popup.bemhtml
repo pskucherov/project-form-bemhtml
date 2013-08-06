@@ -1,0 +1,66 @@
+block popup {
+
+    js: true
+
+    mix, !this.elem, !this.ctx._mix: {
+
+        var m = {},
+            mods = this.ctx.mods || {},
+            mix;
+
+        // default mods
+        mods.theme || (m.theme = 'ffffff');
+        mods.direction || (m.direction = 'down');
+
+        m = [{ mods: m }];
+
+        if (this._inBDropdowna) {
+
+            m.push({
+                block: 'b-dropdowna',
+                elem: 'popup',
+                elemMods: this._dropdownaColor && {
+                    color: this._dropdownaColor
+                }
+            });
+
+            this._dropdownaColor = false;
+            this._inBDropdowna = false;
+        }
+
+        local(this.ctx._mix = true) mix = this.apply();
+
+        return mix ? mix.concat(m) : m;
+    }
+
+    elem shadow, tag: 'i'
+
+    elem content, !this.ctx._wrap, default: {
+        local(
+            this._mode = '',
+            this.ctx._wrap = true,
+            this.ctx = [{
+                elem: 'shadow'
+            },
+            {
+                elem: 'wrap',
+                content: this.ctx
+            }]
+
+        ) this.apply();
+    }
+
+    elem wrap {
+        tag: 'table',
+        attrs: { cellpadding: 0, cellspacing: 0 },
+        content: {
+            tag: 'tr',
+            content: {
+                elem: 'wrap-cell',
+                content: this.ctx.content
+            }
+        }
+    }
+
+    elem wrap-cell, tag: 'td'
+}

@@ -1,0 +1,27 @@
+.i-popup_visibility_visible
+{
+    display: block;
+
+    -ms-animation: show 0.2s;
+    -moz-animation: show 0.2s;
+    -o-animation: show 0.2s;
+    -webkit-animation: show 0.2s;
+}
+
+@-ms-keyframes show
+{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes show
+{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes show
+{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

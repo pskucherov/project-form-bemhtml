@@ -1,0 +1,12 @@
+.i-popup
+{
+    position: absolute;
+    z-index: 32700;
+
+    display: none;
+}
+
+.i-popup__content
+{
+    height: 100%; /*LEGO-7733*/
+}

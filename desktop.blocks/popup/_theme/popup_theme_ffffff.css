@@ -1,0 +1,9 @@
+.popup_theme_ffffff .popup__content
+{
+    background: #fff;
+}
+
+.popup_theme_ffffff .popup__tail
+{
+    background-image: url(popup_theme_ffffff.png);
+}

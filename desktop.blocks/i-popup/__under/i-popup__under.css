@@ -1,0 +1,16 @@
+.i-popup__under
+{
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+/* LEGO-7661 */
+.i-popup div.i-popup__under
+{
+    display: none;
+}

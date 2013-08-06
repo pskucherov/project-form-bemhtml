@@ -1,0 +1,23 @@
+block i-popup {
+
+    mods: { 'autoclosable' : 'yes' }
+
+    js: true,
+
+    content: {
+        elem: 'content',
+        content: [
+            this.ctx.content,
+            {
+                elem: 'under',
+                mods: this.ctx.underMods,
+                mix: this.ctx.underMix
+            }
+        ]
+    }
+
+    attrs, this.ctx.zIndex: {
+        'style' : 'z-index:' + (32700 + this.ctx.zIndex)
+    }
+
+}

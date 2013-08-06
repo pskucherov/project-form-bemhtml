@@ -1,0 +1,9 @@
+.popup__shadow
+{
+    top: -10px;
+    left: -15px;
+
+    border: 0;
+    background: #000;
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='15', MakeShadow='true', ShadowOpacity='0.25');
+}

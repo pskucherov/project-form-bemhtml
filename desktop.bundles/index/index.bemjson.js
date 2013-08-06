@@ -363,8 +363,28 @@
                                                 {
                                                     elem: 'cell',
                                                     content: {
-                                                        tag: 'input',
-                                                        attrs: { name: 'uploadfile', type: 'file' }
+                                                        block: 'b-form-attach',
+                                                        content: [
+                                                            {
+                                                                block: 'b-form-button',
+                                                                mods: { size: 'm', theme: 'grey-no-transparent-m', valign: 'middle' },
+                                                                type: 'file',
+                                                                name: 'attachment',
+                                                                content: 'Выбрать файл'
+                                                            },
+                                                            {
+                                                                elem: 'holder',
+                                                                content: [
+                                                                    {
+                                                                        block: 'b-icon'
+                                                                    },
+                                                                    {
+                                                                        elem: 'text',
+                                                                        content: 'файл не выбран'
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
                                                     }
                                                 }
                                             ]
@@ -508,17 +528,107 @@
                                                 },
                                                 {
                                                     elem: 'cell',
-                                                    content: {
-                                                        block: 'b-selecter',
-                                                        attrs: { name: 'recommend' },
-                                                        items: [
-                                                            'от HR-менеджера Яндекса',
-                                                            'Я.Субботник',
-                                                            'Yet another Conference',
-                                                            'из поиска',
-                                                            'по рекомендации'
-                                                        ]
-                                                    }
+                                                    content: [
+                                                        {
+                                                            block: 'b-form-select',
+                                                            name: 'recommend',
+                                                            mods: { size: 'm', theme: 'grey' },
+                                                            content: [
+                                                                {
+                                                                    block: 'b-form-button',
+                                                                    mods: { valign: 'middle', size: 'm', theme: 'grey-m' },
+                                                                    type: 'button',
+                                                                    content: 'Выбрать'
+                                                                },
+                                                                {
+                                                                    elem: 'select',
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'option',
+                                                                            attrs: { value: 'no' },
+                                                                            content: 'Выбрать'
+                                                                        },
+                                                                        {
+                                                                            elem: 'option',
+                                                                            attrs: { value: 'от HR-менеджера Яндекса' },
+                                                                            content: 'от HR-менеджера Яндекса'
+                                                                        },
+                                                                        {
+                                                                            elem: 'option',
+                                                                            attrs: { value: 'Я.Субботник' },
+                                                                            content: 'Я.Субботник'
+                                                                        },
+                                                                        {
+                                                                            elem: 'option',
+                                                                            attrs: { value: 'Yet another Conference' },
+                                                                            content: 'Yet another Conference'
+                                                                        },
+                                                                        {
+                                                                            elem: 'option',
+                                                                            attrs: { value: 'из поиска' },
+                                                                            content: 'из поиска'
+                                                                        },
+                                                                        {
+                                                                            elem: 'option',
+                                                                            attrs: { value: 'по рекомендации' },
+                                                                            content: 'по рекомендации'
+                                                                        },
+                                                                        {
+                                                                            elem: 'option',
+                                                                            attrs: { value: 'other' },
+                                                                            content: 'другое'
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                        /*,
+                                                        {
+                                                            block: 'b-selecter',
+                                                            attrs: { name: 'recommend' },
+                                                            items: [
+                                                                'от HR-менеджера Яндекса',
+                                                                'Я.Субботник',
+                                                                'Yet another Conference',
+                                                                'из поиска',
+                                                                'по рекомендации'
+                                                            ]
+                                                        }
+                                                        /*,
+                                                        {
+                                                            block: 'b-form-select',
+                                                            name: 'country',
+                                                            mods: { size: 'm', theme: 'grey' },
+                                                            content: [
+                                                                {
+                                                                    block: 'b-form-button',
+                                                                    mods: { valign: 'middle', size: 'm', theme: 'grey-m' },
+                                                                    type: 'button',
+                                                                    content: 'Россия'
+                                                                },
+                                                                {
+                                                                    elem: 'select',
+                                                                    content: [
+                                                                        {
+                                                                            elem: 'option',
+                                                                            attrs: { value: 'ru' },
+                                                                            content: 'Россия'
+                                                                        },
+                                                                        {
+                                                                            elem: 'option',
+                                                                            attrs: { value: 'ua' },
+                                                                            content: 'Украина'
+                                                                        },
+                                                                        {
+                                                                            elem: 'option',
+                                                                            attrs: { value: 'be' },
+                                                                            content: 'Беларусь'
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }*/
+                                                    ]
                                                 }
                                             ]
                                         },
@@ -568,10 +678,23 @@
                                                     }
                                                 ]
                                             }
+                                        },
+                                        {
+                                            elem: 'row',
+                                            content: {
+                                                elem: 'cell',
+                                                colspan: '2',
+                                                content: '&nbsp;'
+                                            }
+                                        },
+                                        {
+                                            elem: 'row',
+                                            content: {
+                                                elem: 'cell',
+                                                colspan: '2',
+                                                content: '&nbsp;'
+                                            }
                                         }
-
-
-
                                     ]
                                 }
 

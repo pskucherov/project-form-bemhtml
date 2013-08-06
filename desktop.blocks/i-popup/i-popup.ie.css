@@ -1,0 +1,11 @@
+/* В IE7 баг для position:absolute и visibility:visible. Для IE будет срабатывать display:block и display:none */
+.i-popup
+{
+    display: none;
+}
+
+
+.i-popup__content
+{
+    height: auto; /*LEGO-7733*/
+}
