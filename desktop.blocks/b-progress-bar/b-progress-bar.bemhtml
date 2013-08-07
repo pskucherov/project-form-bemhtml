@@ -1,0 +1,17 @@
+block b-progress-bar {
+
+    content: {
+        elem: 'progress',
+        mix: [ { block: 'b-input-box' } ],
+        mods: { radius: 6 },
+        content: {
+            elem: 'load',
+            mix: [ { elem: 'progress', mods: { radius: 6 } }  ],
+            content: {
+                elem: 'mark',
+                content: this.ctx.content
+            }
+        }
+    }
+
+}

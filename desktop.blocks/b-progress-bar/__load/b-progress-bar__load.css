@@ -1,0 +1,14 @@
+.b-progress-bar__load
+{
+    width: 50%;
+
+    background: #29bf14;
+    background: -moz-linear-gradient(top, #abff58, #29bf14, #abff58);
+    background: -webkit-gradient(linear, left top, left bottom,
+    color-stop(0%,#abff58), color-stop(50%,#29bf14), color-stop(100%,#abff58));
+    background: -webkit-linear-gradient(top, #abff58, #29bf14, #abff58);
+    background: -o-linear-gradient(top, #abff58, #29bf14, #abff58);
+    background: -ms-linear-gradient(top, #abff58, #29bf14, #abff58);
+    background: linear-gradient(top, #abff58, #29bf14, #abff58);
+
+}

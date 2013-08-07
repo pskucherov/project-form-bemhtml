@@ -8,6 +8,10 @@
     ],
     content: [
         {
+            block: 'b-progress-bar',
+            content: '0 / 23'
+        },
+        {
             block: 'b-questionnaire',
             content: [
                 {
