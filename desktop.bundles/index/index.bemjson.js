@@ -8,10 +8,6 @@
     ],
     content: [
         {
-            block: 'b-progress-bar',
-            content: '0 / 23'
-        },
-        {
             block: 'b-questionnaire',
             content: [
                 {
@@ -40,7 +36,6 @@
                 },
                 {
                     block: 'b-form',
-                      tag: 'form',
                     attrs:
                         {
                              method:'post',
@@ -51,6 +46,9 @@
                             elem: 'title',
                             tag: 'h3',
                             content: 'Заполните анкету'
+                        },
+                        {
+                            block: 'b-progress-bar'
                         },
                         {
                             block: 'b-table',
@@ -100,7 +98,7 @@
                                                 },
                                                 {
                                                     block: 'b-question-checkbox',
-                                                    fieldName: 'q5',
+                                                    fieldName: 'q5_c',
                                                     items: [
                                                         'начальный;',
                                                         'средний;',

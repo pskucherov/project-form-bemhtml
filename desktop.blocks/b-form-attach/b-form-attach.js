@@ -69,6 +69,7 @@ BEM.DOM.decl('b-form-attach', {
         this.setMod(this.elem('holder'), 'state', fileName ? '' : 'hidden');
         this.elem('text').text(fileName || this._noFileText);
 
+        BEM.blocks['b-form'].trigger('checkAttach');
     },
 
     _extensionsToMods: {

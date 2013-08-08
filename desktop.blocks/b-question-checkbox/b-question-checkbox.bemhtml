@@ -6,8 +6,9 @@ block b-question-checkbox {
                 elem: 'input-checbox',
                 content: [
                     {
+                        elem: 'field',
                         tag: 'input',
-                        attrs: { type: 'checkbox', value: _this.position, name: _this.ctx.fieldName }
+                        attrs: { type: 'checkbox', value: e, name: _this.ctx.fieldName }
                     },
                     {
                         tag: '',

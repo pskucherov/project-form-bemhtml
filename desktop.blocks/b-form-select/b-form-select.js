@@ -121,6 +121,7 @@ DOM.decl('b-form-select', {
 
     close : function() {
 
+        BEM.blocks['b-form'].trigger('checkSelect');
         return this.delMod('opened');
 
     },

@@ -3,4 +3,9 @@
     width: 210px;
     height: 11px;
     position: fixed;
+
+    top: 50px;
+    margin-left: 960px;
+
+    background-color: #FFF;
 }

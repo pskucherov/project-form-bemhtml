@@ -45,7 +45,8 @@ BEM.DOM.decl('b-form-checkbox', {
             })
             .liveBindTo('field', 'change', function (a) {
                 this.delMod('warning');
-                this._onChange(a)
+                this._onChange(a);
+                BEM.blocks['b-form'].trigger('checkAgree');
             })
             .liveBindTo('field', 'focusin', function () {
                 this.setMod('focused', 'yes');

@@ -9,7 +9,7 @@ block b-progress-bar {
             mix: [ { elem: 'progress', mods: { radius: 6 } }  ],
             content: {
                 elem: 'mark',
-                content: this.ctx.content
+                content: ''
             }
         }
     }
