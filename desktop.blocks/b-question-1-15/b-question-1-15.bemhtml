@@ -1,11 +1,12 @@
 block b-question-1-15 {
 
-
+    js: true,
 
     content: {
 
         var c = {
                 block: 'b-layout-table',
+                js: true,
                 mods: { layout: 'cells' },
                 content: []
             }
@@ -20,18 +21,32 @@ block b-question-1-15 {
                     {
                         elem: 'cell',
                         elemMods: { position: 'l', text: 'italic' },
-                        content: 'Вопрос ' + i
+                        content: [
+                            {
+                                block: 'b-accordion-control',
+                                mods: { to: 'q' + i }
+                            },
+                            {
+                                tag: '',
+                                content: 'Вопрос ' + i
+                            }
+                        ]
                     },
                     {
                         elem: 'cell',
                         elemMods: { position: 'r-question' },
-                        content: e
+                        content: {
+                            elem: 'text',
+                            mods: { upcell: 'q' + i },
+                            content: e
+                        }
                     }
                 ]
             });
 
             c.content.push({
                 elem: 'row',
+                mods: { downrow: 'q' + i },
                 content: [
                     {
                         elem: 'cell',

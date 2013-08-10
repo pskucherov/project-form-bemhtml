@@ -23,6 +23,12 @@
 .b-layout-table_layout_cells .b-layout-table__cell
 {
     padding: 0.4em 0.5em 0.5em 0px;
+    max-width: 685px;
+}
+
+.b-layout-table_layout_cells .b-layout-table__row_hide_yes
+{
+    display: none;
 }
 
 .b-layout-table_layout_cells .b-layout-table__cell_type_agree
@@ -34,4 +40,33 @@
 {
     text-align: center;
     background: #e7e7e7;
+}
+
+.b-layout-table_layout_cells .b-layout-table__text
+{
+    min-height: 20px;
+    max-height: 1000px;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    transition: all .5s linear;
+
+    overflow: hidden;
+}
+
+.b-layout-table_layout_cells .b-layout-table__text_height_20
+{
+
+    max-height: 20px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

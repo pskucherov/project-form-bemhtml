@@ -20,6 +20,9 @@
         },
         {
             block: 'b-input-box'
+        },
+        {
+            block: 'b-accordion-control'
         }
     ]
 })

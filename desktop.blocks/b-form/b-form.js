@@ -22,8 +22,6 @@ BEM.DOM.decl('b-form', {
 
             BEM.blocks['b-form'].on('checkQ5', this._checkQ5, this);
 
-
-
         }
     },
 

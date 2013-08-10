@@ -1,0 +1,10 @@
+.b-accordion-control_show_yes
+{
+    line-height: 14px;
+}
+
+
+.b-accordion-control_show_yes .b-accordion-control__roll
+{
+    margin-left: -1px;
+}

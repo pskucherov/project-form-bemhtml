@@ -1,0 +1,10 @@
+.b-text__p
+{
+}
+
+.b-text__p_weight_bold
+{
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
