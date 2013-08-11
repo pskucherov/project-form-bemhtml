@@ -46,11 +46,11 @@
 {
     min-height: 20px;
     max-height: 1000px;
-    -webkit-transition: all .5s linear;
-    -moz-transition: all .5s linear;
-    -o-transition: all .5s linear;
-    -ms-transition: all .5s linear;
-    transition: all .5s linear;
+    -webkit-transition: all 2s linear;
+    -moz-transition: all 2s linear;
+    -o-transition: all 2s linear;
+    -ms-transition: all 2s linear;
+    transition: all 2s linear;
 
     overflow: hidden;
 }
@@ -59,11 +59,12 @@
 {
 
     max-height: 20px;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    transition: all 0.1s linear;
 
     overflow: hidden;
 

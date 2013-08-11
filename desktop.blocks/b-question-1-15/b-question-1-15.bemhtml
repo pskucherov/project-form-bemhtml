@@ -8,7 +8,17 @@ block b-question-1-15 {
                 block: 'b-layout-table',
                 js: true,
                 mods: { layout: 'cells' },
-                content: []
+                content: [
+                    {
+                        block: 'b-link',
+                        mods: { pseudo: 'yes', position: 'corner' },
+                        mix: [
+                            { block: 'b-question-1-15', elem: 'accord-opener' }
+                        ],
+                        js: true,
+                        content: 'Свернуть всё'
+                    }
+                ]
             }
             , i = 0;
 

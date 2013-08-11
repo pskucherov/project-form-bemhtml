@@ -21,29 +21,3 @@
         }
     ]
 })
-
-/*([
-
-    {
-        tech: '',
-        mustDeps: [
-            { block: 'i-jquery', elems: 'leftclick' },
-            { block: 'i-bem', elems: ['dom', 'html'] }
-        ],
-    },
-
-    {
-        tech: 'js',
-        shouldDeps: [
-            {
-                block: 'i-popup',
-                tech: 'bemhtml'
-            },
-            {
-                block: 'i-popup',
-                tech: 'css'
-            }
-        ]
-    }
-
-])*/

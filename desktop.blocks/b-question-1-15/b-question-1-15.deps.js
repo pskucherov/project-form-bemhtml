@@ -16,7 +16,8 @@
             block: 'b-question-checkbox'
         },
         {
-            block: 'b-link'
+            block: 'b-link',
+            mods: { pseudo: 'yes', position: 'corner' }
         },
         {
             block: 'b-input-box'

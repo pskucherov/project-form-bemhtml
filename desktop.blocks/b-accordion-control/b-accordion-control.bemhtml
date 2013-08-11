@@ -1,5 +1,4 @@
 block b-accordion-control {
-    //content: '&ndash;'
     js: true,
     content: {
         elem: 'roll',
