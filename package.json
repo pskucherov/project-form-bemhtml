@@ -1,10 +1,10 @@
 {
   "author": "",
-  "name": "bem-project-stub",
+  "name": "project-form-bemhtml",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bem/project-stub.git"
+    "url": "git://github.com/phpprog/project-form-bemhtml.git"
   },
   "engines": {
     "node": "0.6 | 0.8 | 0.10"
