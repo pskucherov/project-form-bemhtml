@@ -4,28 +4,29 @@ block b-question-1-15 {
 
     content: {
 
-        var c = {
-                block: 'b-layout-table',
-                js: true,
-                mods: { layout: 'cells' },
-                content: [
-                    {
-                        block: 'b-link',
-                        mods: { pseudo: 'yes', position: 'corner' },
-                        mix: [
-                            { block: 'b-question-1-15', elem: 'accord-opener' }
-                        ],
-                        js: true,
-                        content: 'Свернуть всё'
-                    }
-                ]
-            }
+        var c = [
+                {
+                    block: 'b-link',
+                    mods: { pseudo: 'yes', position: 'corner' },
+                    mix: [
+                        { block: 'b-question-1-15', elem: 'accord-opener' }
+                    ],
+                    js: true,
+                    content: 'Свернуть всё'
+                },
+                {
+                    block: 'b-layout-table',
+                    js: true,
+                    mods: { layout: 'cells' },
+                    content: []
+                }
+            ]
             , i = 0;
 
 
         this.ctx.questions.forEach(function(e) {
             ++i;
-            c.content.push({
+            c[1].content.push({
                 elem: 'row',
                 content: [
                     {
@@ -54,7 +55,7 @@ block b-question-1-15 {
                 ]
             });
 
-            c.content.push({
+            c[1].content.push({
                 elem: 'row',
                 mods: { downrow: 'q' + i },
                 content: [
@@ -78,7 +79,7 @@ block b-question-1-15 {
                 ]
             });
 
-            c.content.push({
+            c[1].content.push({
                 elem: 'row',
                     content: [
                 {

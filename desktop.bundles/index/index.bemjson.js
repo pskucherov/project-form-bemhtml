@@ -243,32 +243,28 @@
                                                         {
                                                             elem: 'li',
                                                             content: {
-                                                                elem: 'p',
-                                                                mods: { weight: 'bold' },
+                                                                elem: 'strong',
                                                                 content: 'проверка полноты и правильности заполнения полей (где это возможно);'
                                                             }
                                                         },
                                                         {
                                                             elem: 'li',
                                                             content: {
-                                                                elem: 'p',
-                                                                mods: { weight: 'bold' },
+                                                                elem: 'strong',
                                                                 content: 'возможность свернуть и развернуть разделы (аккордеон);'
                                                             }
                                                         },
                                                         {
                                                             elem: 'li',
                                                             content: {
-                                                                elem: 'p',
-                                                                mods: { weight: 'bold' },
+                                                                elem: 'strong',
                                                                 content: 'индикатор заполнения анкеты;'
                                                             }
                                                         },
                                                         {
                                                             elem: 'li',
                                                             content: {
-                                                                elem: 'p',
-                                                                mods: { weight: 'bold' },
+                                                                elem: 'strong',
                                                                 content: 'что-нибудь ещё.'
                                                             }
                                                         }
