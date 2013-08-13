@@ -12,11 +12,20 @@ BEM.DOM.decl('b-back-top', {
 
             this.bindToWin('scroll', function(e) {
                 var opacity = this._getOpacity(bpage.height(), e.data.domElem.scrollTop());
-                this.domElem.css('opacity', opacity);
+                if ( opacity <= 0.05 ) {
+                    this.domElem.css( { display: 'none' });
+                } else {
+                    this.domElem.css({ 'opacity': opacity, display: 'block' });
+                }
             });
 
             this.bindTo('click', function() {
                 bpage.animate( { scrollTop: 0 }, 500);
+
+                /**
+                 * хак для IE
+                 */
+                $("body,html").animate( { scrollTop: 0 }, 500);
             });
         }
 
