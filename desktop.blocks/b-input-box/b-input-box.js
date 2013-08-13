@@ -21,16 +21,24 @@ BEM.DOM.decl('b-input-box', {
         };
 
         this
-            .liveBindTo('focusin focusout', function(e) {
+            .liveBindTo('field', 'focusin focusout', function(e) {
                 var mod = eventsToMods[e.type];
                 this.setMod(mod.name, mod.val || '');
 
                 if (e.type === 'focusout') {
-                    BEM.blocks['b-form'].trigger('checkFields');
+                    BEM.blocks['b-form'].trigger('checkFields', e);
+                } else {
+                    BEM.blocks['b-form'].trigger('hideError', e);
                 }
             })
             .liveBindTo('keyup', function() {
                 BEM.blocks['b-form'].trigger('checkInputBoxes');
+            })
+            .liveBindTo('field', 'focus_warning', function() {
+                this.setMod('focused', 'warning');
+            })
+            .liveBindTo('field', 'del_focus_warning', function() {
+                this.delMod('focused');
             })
         ;
     }

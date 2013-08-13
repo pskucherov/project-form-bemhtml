@@ -43,7 +43,7 @@ BEM.DOM.decl('b-form-checkbox', {
             .liveBindTo('field', 'click settick', function (a) {
                 this._onClick(a);
             })
-            .liveBindTo('field', 'change', function (a) {
+            .liveBindTo('field', 'change verification', function (a) {
                 this.delMod('warning');
                 this._onChange(a);
                 BEM.blocks['b-form'].trigger('checkAgree');

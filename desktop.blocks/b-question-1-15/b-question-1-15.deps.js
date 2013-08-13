@@ -24,6 +24,9 @@
         },
         {
             block: 'b-accordion-control'
+        },
+        {
+            block: 'b-error'
         }
     ]
 })

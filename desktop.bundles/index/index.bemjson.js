@@ -60,7 +60,8 @@
                                             block: 'b-text',
                                             elem: 'p',
                                             mods: { weight: 'bold' },
-                                            content: 'Год рождения.'
+                                            content: 'Год рождения.',
+                                            error: 'Укажите год рождения.'
                                         },
                                         {
                                             block: 'b-text',
@@ -172,7 +173,8 @@
                                                         '.'
                                                     ]
                                                 }
-                                            ]
+                                            ],
+                                            error: 'В ответе должа быть ссылка на один из указанных проектов.'
                                         },
                                         {
                                             block: 'b-text',
@@ -228,7 +230,8 @@
                                                         '.'
                                                     ]
                                                 }
-                                            ]
+                                            ],
+                                            error: 'В ответе должа быть ссылка на один из указанных проектов.'
                                         },
                                         {
                                             block: 'b-text',
@@ -308,8 +311,8 @@
                                                         '. В качестве ответа на вопрос пришлите ссылку на проект.'
                                                     ]
                                                 }
-                                            ]
-
+                                            ],
+                                            error: 'В ответе должа быть ссылка на github.'
                                         }
                                     ]
                                 },
@@ -443,14 +446,21 @@
                                                 },
                                                 {
                                                     elem: 'cell',
-                                                    content: {
-                                                        block: 'b-input-box',
-                                                        content: {
-                                                            elem: 'field',
-                                                            tag: 'input',
-                                                            attrs: { name: 'email' }
+                                                    content: [
+                                                        {
+                                                            block: 'b-input-box',
+                                                            content: {
+                                                                elem: 'field',
+                                                                tag: 'input',
+                                                                attrs: { name: 'email' }
+                                                            }
+                                                        },
+                                                        {
+                                                            block: 'b-error',
+                                                            mods: { to: 'email' },
+                                                            content: 'Неверный адрес электронной почты.'
                                                         }
-                                                    }
+                                                    ]
                                                 }
                                             ]
                                         },
@@ -593,7 +603,8 @@
                                                     {
                                                         block: 'b-form-button',
                                                         mods: { theme: 'grey-m', size: 'm', valign: 'middle' },
-                                                        type: 'submit',
+                                                        mix: [ { block: 'b-form', elem: 'submit-button'} ],
+                                                        /*type: 'check-and-send',*/
                                                         content: 'Отправить'
                                                     },
                                                     {

@@ -25,7 +25,23 @@ block b-question-1-15 {
 
 
         this.ctx.questions.forEach(function(e) {
+            var error
+                , be
+            ;
             ++i;
+
+            if (typeof e.error === 'undefined') {
+                //error = 'Поле обязательно для заполнения.'
+                be = error = '';
+            } else {
+                error = e.error;
+                be = {
+                    block: 'b-error',
+                    mods: { to: 'q' + i },
+                    content: error
+                }
+            }
+
             c[1].content.push({
                 elem: 'row',
                 content: [
@@ -65,16 +81,18 @@ block b-question-1-15 {
                     },
                     {
                         elem: 'cell',
-                        content:
-                        {
-                            block: 'b-input-box',
-                            content: {
-                                elem: 'field',
-                                mix: [{ block: 'b-input-box', elem: 'field-textarea' }],
-                                tag: 'textarea',
-                                attrs: { cols: 80, rows: 4, name: 'q' + i }
-                            }
-                        }
+                        content: [
+                            {
+                                block: 'b-input-box',
+                                content: {
+                                    elem: 'field',
+                                    mix: [{ block: 'b-input-box', elem: 'field-textarea' }],
+                                    tag: 'textarea',
+                                    attrs: { cols: 80, rows: 4, name: 'q' + i }
+                                }
+                            },
+                            be
+                        ]
                     }
                 ]
             });

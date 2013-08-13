@@ -4,7 +4,7 @@
     ],
     shouldDeps: {
         mods: {
-            'focused': 'yes'
+            'focused': ['warning', 'yes']
         }
     }
 })
