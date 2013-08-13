@@ -1,0 +1,8 @@
+.b-back-top
+{
+    position: fixed;
+    top: 180px;
+    margin-left: 75em;
+
+    opacity: 0;
+}

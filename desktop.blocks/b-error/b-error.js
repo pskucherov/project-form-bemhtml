@@ -42,7 +42,7 @@ BEM.DOM.decl('b-error', {
 
                     case 'q1':
                         val = parseInt(val, 10);
-                        if ( val && val >= 1828 && +val <= 2000 ) {
+                        if ( val && val >= 1828 && val <= 2000 ) {
                             return true;
                         }
                         return false;
@@ -58,8 +58,6 @@ BEM.DOM.decl('b-error', {
                     case 'email':
                         return (/^([a-z0-9_-]+.)*[a-z0-9_-]+@([a-z0-9][a-z0-9-]*[a-z0-9].)+[a-z]{2,4}$/i).test(val);
                         break;
-
-
 
                     case 'q13':
                     case 'q14':

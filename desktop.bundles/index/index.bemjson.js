@@ -35,6 +35,10 @@
                     ]
                 },
                 {
+                    block: 'b-back-top',
+                    content: 'Вверх'
+                },
+                {
                     block: 'b-form',
                     attrs:
                         {

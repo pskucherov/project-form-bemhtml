@@ -1,0 +1,8 @@
+block 'b-back-top' {
+    js: true,
+    content: {
+        block: 'b-link',
+        mods: { pseudo: 'yes' },
+        content: this.ctx.content
+    }
+}
