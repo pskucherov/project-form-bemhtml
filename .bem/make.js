@@ -15,7 +15,7 @@ MAKE.decl('Arch', {
         return {
             'bem-bl': {
                 type: 'git',
-                url: 'git://github.com/bem/bem-bl.git',
+                url: 'git://github.com/phpprog/bem-bl.git',
                 treeish: '0.3'
             }
         };
