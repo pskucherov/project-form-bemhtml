@@ -23,6 +23,12 @@ BEM.DOM.decl('b-form', {
 
             BEM.blocks['b-form'].on('checkQ5', this._checkQ5, this);
 
+            this.bindTo('reset-button', 'click', function() {
+                this.afterCurrentEvent(function() {
+                    this._checkAll();
+                });
+            });
+
             this.bindTo('submit-button', 'click', function() {
 
                 if ( this._reqFieldsFilled() ) {

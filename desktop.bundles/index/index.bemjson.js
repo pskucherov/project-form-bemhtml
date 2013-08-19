@@ -608,12 +608,12 @@
                                                         block: 'b-form-button',
                                                         mods: { theme: 'grey-m', size: 'm', valign: 'middle' },
                                                         mix: [ { block: 'b-form', elem: 'submit-button'} ],
-                                                        /*type: 'check-and-send',*/
                                                         content: 'Отправить'
                                                     },
                                                     {
                                                         block: 'b-form-button',
                                                         mods: { theme: 'grey-m', size: 'm', valign: 'middle', padding: 'left' },
+                                                        mix: { block: 'b-form', elem: 'reset-button' },
                                                         type: 'reset',
                                                         content: 'Очистить'
                                                     }
