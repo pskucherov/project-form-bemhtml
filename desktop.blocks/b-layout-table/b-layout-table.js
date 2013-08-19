@@ -1,4 +1,6 @@
-/** @requires BEM */
+/**
+ * Управление ячейками таблицы (скрыть / показать).
+ */
 /** @requires BEM.DOM */
 
 (function(undefined) {

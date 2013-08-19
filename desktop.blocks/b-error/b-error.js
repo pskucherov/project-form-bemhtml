@@ -1,4 +1,6 @@
-/** @requires BEM */
+/**
+ * Список обязательных полей для заполнения и проверки для них
+ */
 /** @requires BEM.DOM */
 
 (function(undefined) {
@@ -19,6 +21,12 @@ BEM.DOM.decl('b-error', {
         /* ... */
     },
 
+    /**
+     *
+     * @param name - имя поля
+     * @param val  - содержимое поля
+     * @returns {boolean}
+     */
     'verification': function(name, val) {
         var tests = {};
         tests['agree'] = true;

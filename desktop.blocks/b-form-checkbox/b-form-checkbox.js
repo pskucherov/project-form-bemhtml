@@ -1,4 +1,6 @@
-/** @requires BEM */
+/**
+ * Кастомный чекбокс. Используется в блоке соглашения.
+ */
 /** @requires BEM.DOM */
 
 (function(undefined) {

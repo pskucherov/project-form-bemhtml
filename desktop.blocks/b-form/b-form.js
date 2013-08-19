@@ -1,5 +1,8 @@
-/** @requires BEM */
-/** @requires BEM.DOM */
+/**
+ * Проверка всех полей формы на правильность заполнения.
+ * Подсчёт количества существующих полей и пересчёт прогресс-бара.
+ * Изменяет состояние (показать / скрыть) сообщений об ошибках для полей.
+ */
 
 (function(undefined) {
 
@@ -23,12 +26,19 @@ BEM.DOM.decl('b-form', {
 
             BEM.blocks['b-form'].on('checkQ5', this._checkQ5, this);
 
+            /**
+             * Проверить все поля, чтобы обнулить прогресс-бар, после очищения формы.
+             */
             this.bindTo('reset-button', 'click', function() {
                 this.afterCurrentEvent(function() {
                     this._checkAll();
                 });
             });
 
+            /**
+             * Проверить все поля, если заполнены по правилам - выполнить форму,
+             * если нет - развернуть поля и показать все ошибки
+             */
             this.bindTo('submit-button', 'click', function() {
 
                 if ( this._reqFieldsFilled() ) {
@@ -51,6 +61,10 @@ BEM.DOM.decl('b-form', {
         }
     },
 
+    /**
+     * Определить правильно ли заполнены обязательные поля
+     * @returns {boolean}
+     */
     '_reqFieldsFilled': function() {
         var i
             , elm;
@@ -72,6 +86,11 @@ BEM.DOM.decl('b-form', {
         return true;
     },
 
+    /**
+     * Развернуть поля с ошибками
+     * @param to - название вопроса
+     * @returns {boolean}
+     */
     '_openAccordWithErrors': function(to) {
         var i;
         for (i = 0; i < this.accords.length; i++ ) {
@@ -83,6 +102,9 @@ BEM.DOM.decl('b-form', {
         return false;
     },
 
+    /**
+     * Установка ширины полосы состояния прогресс-бара
+     */
     '_setLoad' : function() {
         var percent
             , stat
@@ -101,6 +123,9 @@ BEM.DOM.decl('b-form', {
         this.findBlockInside('b-progress-bar').elem('mark').html(filled + ' / ' + num);
     },
 
+    /**
+     * Поиск и сохранения используемых блоков
+     */
     'findInputs': function() {
 
         this.progress    = this.findBlockInside('b-progress-bar').elem('load');
@@ -135,6 +160,12 @@ BEM.DOM.decl('b-form', {
         return false;
     },
 
+    /**
+     * Установка красной тени, для поля с ошибкой
+     * @param to
+     * @param setWarning
+     * @returns {boolean}
+     */
     '_focusControl': function(to, setWarning) {
         var j;
 
@@ -152,6 +183,10 @@ BEM.DOM.decl('b-form', {
         return false;
     },
 
+    /**
+     * Управление блоками ошибок
+     * @param name
+     */
     '_setErrorsBlock': function(name) {
         var k;
         if (typeof name !== 'undefined') {
@@ -171,6 +206,10 @@ BEM.DOM.decl('b-form', {
         }
     },
 
+    /**
+     * Отдельная обработка вопроса №5, т.к. он считается заполненным при клике на чекбокс
+     * @param redraw
+     */
     '_checkQ5': function(redraw) {
         var i;
         if (!this.fillStat['q5']) {
@@ -190,6 +229,10 @@ BEM.DOM.decl('b-form', {
         }
     },
 
+    /**
+     * Проверяется прикреплён ли файл
+     * @param redraw
+     */
     '_checkAttach': function(redraw) {
         if (this.attach.html() === 'файл не выбран') {
             this.fillStat['attach'] = false;
@@ -201,6 +244,10 @@ BEM.DOM.decl('b-form', {
         }
     },
 
+    /**
+     * Проверяется, установлен ли чекбокс на соглашении
+     * @param redraw
+     */
     '_checkAgree': function(redraw) {
         if (this.agree.attr('checked') === 'checked') {
             this.fillStat[this.agree.attr('name')] = true;
@@ -212,6 +259,10 @@ BEM.DOM.decl('b-form', {
         }
     },
 
+    /**
+     * Проверяется, выбран ли селект
+     * @param redraw
+     */
     '_checkSelect': function(redraw) {
         if (this.select.val() === 'no') {
             this.fillStat[this.select.attr('name')] = false;
@@ -258,6 +309,10 @@ BEM.DOM.decl('b-form', {
         return this.fillStat[fName];
     },
 
+    /**
+     * Проверка полей ввода
+     * @param redraw
+     */
     '_checkInputBoxes': function(redraw) {
         var i;
 
@@ -269,6 +324,11 @@ BEM.DOM.decl('b-form', {
         }
     },
 
+    /**
+     * Проверка сразу всех полей.
+     * Вызывается при старте, чтобы пересчитать все существующие поля ввода и отобразить их в прогрессбаре.
+     * А так же после сброса формы, чтобы обнулить прогресс-бар.
+     */
     '_checkAll': function() {
 
         /**
@@ -299,7 +359,13 @@ BEM.DOM.decl('b-form', {
 
         this._setLoad();
     },
-    
+
+    /**
+     * Подсчёт полей для ввода
+     * @param obj
+     * @returns {Array}
+     * @private
+     */
     _cntObj: function(obj) {
 
         var k
